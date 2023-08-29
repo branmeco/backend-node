@@ -8,4 +8,3 @@ export default (router: express.Router) => {
     router.delete('/users/:id', isAuthenticated, isOwner, deleteUser);
     router.patch('/users/:id', isAuthenticated, isOwner, updateUser);
 };
-
